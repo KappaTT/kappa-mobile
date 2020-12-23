@@ -4,6 +4,9 @@
 
 <img src="assets/icon.png" width="256" />
 
+> I have decided to fork `kappa-mobile` into `kappa-pwa` and deliver the mobile focused version via the website similar to `kappa-desktop`. This choice is to improve the maintainability of the `kappa` project I started for future Web Chairs who may not be as familiar with `react-native` and have difficulty keeping the iOS and Android versions up to date with new `expo` releases and App Store regulations. While the experience of a mobile app can't quite be achieved by a PWA, the lack of App Store update reviewal processes and the more stabile process of web development will help the project survive after I have graduated. This project will be a historical archive of the very original `kappa` release I started in my Junior year and will stop being updated as soon as `kappa-pwa` goes live. Thank you.
+> ~ [@jtaylorchang](https://github.com/jtaylorchang)
+
 ## Secrets
 
 Create a file `src/secrets.ts` as follows:
