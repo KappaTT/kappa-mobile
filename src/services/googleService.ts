@@ -1,7 +1,7 @@
 import * as Google from 'expo-google-app-auth';
 
 import { log } from '@services/logService';
-import * as secrets from 'secrets';
+import * as secrets from '@secrets';
 
 /**
  * Attempt to sign in with google.

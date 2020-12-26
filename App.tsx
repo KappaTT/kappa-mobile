@@ -5,7 +5,7 @@ import { AppearanceProvider } from 'react-native-appearance';
 
 import App from './src/App';
 import store from '@reducers';
-import * as secrets from 'secrets';
+import * as secrets from '@secrets';
 
 Sentry.init({
   dsn: secrets.SENTRY_DSN,

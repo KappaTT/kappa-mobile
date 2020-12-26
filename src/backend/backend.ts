@@ -4,7 +4,7 @@ import { Platform } from 'react-native';
 import { jsonRequest, jsonAuthorizedRequest } from '@services/Networking';
 import { jsonDemoRequest, DEMO_TOKEN } from '@services/demoService';
 import { isEmpty } from '@services/utils';
-import * as secrets from 'secrets';
+import * as secrets from '@secrets';
 
 export const M_GET = 'GET';
 export const M_POST = 'POST';
