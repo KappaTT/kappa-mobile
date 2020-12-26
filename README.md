@@ -1,6 +1,6 @@
 # kappa-mobile
 
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/jtaylorchang/kappa-mobile.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jtaylorchang/kappa-mobile/context:javascript)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/jtaylorchang/kappa-mobile.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jtaylorchang/kappa-mobile/context:javascript) [![Lines of Code](https://tokei.rs/b1/github/jtaylorchang/kappa-mobile)](https://github.com/jtaylorchang/kappa-mobile)
 
 <img src="assets/icon.png" width="256" />
 
