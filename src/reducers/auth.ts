@@ -1,5 +1,4 @@
-import { TBlame } from '@backend/backend';
-import { TUser, initialUser, TGoogleUser, initialGoogleUser } from '@backend/auth';
+import { TUser, initialUser } from '@backend/auth';
 
 export const SHOW_MODAL = 'SHOW_MODAL';
 export const HIDE_MODAL = 'HIDE_MODAL';

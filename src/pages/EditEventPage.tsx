@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   StyleSheet,
-  Dimensions,
   ScrollView,
   TouchableWithoutFeedback,
   TouchableOpacity,
@@ -33,8 +32,6 @@ import {
 } from '@components';
 import { HeaderHeight, HORIZONTAL_PADDING } from '@services/utils';
 import { extractPoints } from '@services/kappaService';
-
-const { width, height } = Dimensions.get('window');
 
 const numberFormatter = (text: string) => {
   return text !== undefined ? text.replace(/\D/g, '') : '';

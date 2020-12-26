@@ -14,7 +14,8 @@
     "fixsim": "xattr -cr kappa-theta-tau.app",
     "installsim": "xcrun simctl install booted kappa-theta-tau.app",
     "launchsim": "xcrun simctl launch booted kappa-theta-tau.app",
-    "installandroid": "adb install-multiple ./*"
+    "installandroid": "adb install-multiple ./*",
+    "eslint": "eslint --config ./.eslintrc.json --ext .js,.ts,.jsx,.tsx src/"
   },
   "dependencies": {
     "@expo/vector-icons": "^10.0.0",

@@ -3,14 +3,12 @@ import { StyleSheet, ScrollView, TouchableWithoutFeedback } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import { useSafeArea } from 'react-native-safe-area-context';
 import moment from 'moment';
-import { NotificationFeedbackType } from 'expo-haptics';
 
 import { TRedux } from '@reducers';
-import { _kappa, _ui } from '@reducers/actions';
+import { _kappa } from '@reducers/actions';
 import { theme } from '@constants';
-import { Block, Header, EndCapButton, ListButton, Text, FormattedInput, RadioList } from '@components';
+import { Block, Header, EndCapButton, Text, FormattedInput, RadioList } from '@components';
 import { HeaderHeight, HORIZONTAL_PADDING } from '@services/utils';
-import { TEvent } from '@backend/kappa';
 import { sortEventByDate, getEventById } from '@services/kappaService';
 
 const numberFormatter = (text: string) => {

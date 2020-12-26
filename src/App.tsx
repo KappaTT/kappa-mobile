@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleSheet, Image, StatusBar, Platform } from 'react-native';
-import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import { useSelector, useDispatch } from 'react-redux';
@@ -10,7 +9,7 @@ import { enableScreens } from 'react-native-screens';
 import { GalioProvider } from '@galio';
 
 import { TRedux } from '@reducers';
-import { _auth, _kappa, _prefs, _ui } from '@reducers/actions';
+import { _auth, _kappa, _prefs } from '@reducers/actions';
 import { incompleteUser } from '@backend/auth';
 import {
   Block,
@@ -51,12 +50,6 @@ const _loadResourcesAsync = async () => {
       'PlayfairDisplay-Bold': require('../assets/font/PlayfairDisplay-Bold.ttf')
     })
   ]);
-};
-
-const _handleLoadingError = (error: any) => {
-  // In this case, you might want to report the error to your error
-  // reporting service, for example Sentry
-  console.warn(error);
 };
 
 const App = () => {
@@ -142,9 +135,6 @@ const App = () => {
   };
 
   if (!isLoadingComplete) {
-    // return (
-    //   <AppLoading startAsync={_loadResourcesAsync} onError={_handleLoadingError} onFinish={_handleFinishLoading} />
-    // );
     return null;
   } else {
     return (

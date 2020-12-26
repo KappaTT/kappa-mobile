@@ -19,8 +19,7 @@ import { ProgressCircle } from 'react-native-svg-charts';
 
 import { TRedux } from '@reducers';
 import { TToast } from '@reducers/ui';
-import { _auth, _kappa, _ui } from '@reducers/actions';
-import { log } from '@services/logService';
+import { _kappa, _ui } from '@reducers/actions';
 import {
   getAttendance,
   getExcuse,
@@ -32,10 +31,9 @@ import {
   canCheckIn
 } from '@services/kappaService';
 import { theme } from '@constants';
-import { TabBarHeight, isEmpty, HORIZONTAL_PADDING } from '@services/utils';
+import { HORIZONTAL_PADDING } from '@services/utils';
 import { hapticImpact } from '@services/hapticService';
 import { navigate } from '@navigation/NavigationService';
-import { TEvent } from '@backend/kappa';
 import { TUser } from '@backend/auth';
 import Block from '@components/Block';
 import Ghost from '@components/Ghost';
@@ -45,7 +43,7 @@ import Icon from '@components/Icon';
 import Switch from '@components/Switch';
 import LinkContainer from '@components/LinkContainer';
 
-const { width, height } = Dimensions.get('window');
+const { height } = Dimensions.get('window');
 
 const EventDrawer: React.FC = () => {
   const user = useSelector((state: TRedux) => state.auth.user);

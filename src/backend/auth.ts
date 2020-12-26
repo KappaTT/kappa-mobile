@@ -1,14 +1,5 @@
-import {
-  ENDPOINTS,
-  METHODS,
-  TResponse,
-  makeRequest,
-  makeAuthorizedRequest,
-  pass,
-  fail,
-  TBlame
-} from '@backend/backend';
-import { getBatch, deleteBatch } from '@services/secureStorage';
+import { ENDPOINTS, METHODS, TResponse, makeRequest, pass, fail } from '@backend/backend';
+import { deleteBatch } from '@services/secureStorage';
 import { log } from '@services/logService';
 
 export interface TGoogleUser {

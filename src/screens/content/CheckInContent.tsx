@@ -5,7 +5,6 @@ import {
   TouchableWithoutFeedback,
   TouchableOpacity,
   Keyboard,
-  ActivityIndicator,
   Alert,
   KeyboardAvoidingView
 } from 'react-native';
@@ -32,7 +31,7 @@ import {
   FormattedInput,
   KeyboardDismissView
 } from '@components';
-import { HeaderHeight, TabBarHeight, HORIZONTAL_PADDING } from '@services/utils';
+import { HeaderHeight, HORIZONTAL_PADDING } from '@services/utils';
 import { getEventById, hasValidCheckIn, shouldLoad, sortEventByDate, canCheckIn } from '@services/kappaService';
 
 const numberFormatter = (text: string) => {
@@ -65,9 +64,9 @@ const CheckInContent: React.FC<{
   const [reason, setReason] = React.useState<string>('');
 
   const [hasPermission, setHasPermission] = React.useState<boolean>(false);
-  const [scanned, setScanned] = React.useState<boolean>(false);
+  const [, setScanned] = React.useState<boolean>(false);
   const [scanning, setScanning] = React.useState<boolean>(false);
-  const [openDate, setOpenDate] = React.useState<moment.Moment>(moment());
+  const [openDate] = React.useState<moment.Moment>(moment());
 
   const dispatch = useDispatch();
   const dispatchSetCheckInEvent = React.useCallback(

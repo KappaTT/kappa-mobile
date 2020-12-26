@@ -15,10 +15,9 @@ import {
   SIGN_IN_WITH_GOOGLE_FAILURE,
   MODIFY_USER
 } from '@reducers/auth';
-import { TUser, initialUser, TGoogleUser, purge } from '@backend/auth';
-import { getBatch, setBatch, deleteBatch } from '@services/secureStorage';
+import { TUser, initialUser, purge } from '@backend/auth';
+import { getBatch, setBatch } from '@services/secureStorage';
 import * as GoogleService from '@services/googleService';
-import { log } from '@services/logService';
 import { DEMO_USER } from '@services/demoService';
 
 /**
