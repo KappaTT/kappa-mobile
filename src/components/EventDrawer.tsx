@@ -189,7 +189,7 @@ const EventDrawer: React.FC = () => {
   const recordCounts = getEventRecords(directory, records, selectedEventId);
 
   const recordStats = React.useMemo(() => {
-    const fraction = directorySize === 0 ? 0 : directorySize - recordCounts.absent.length;
+    const fraction = directorySize === 0 ? 0 : (directorySize - recordCounts.absent.length) / directorySize;
 
     return {
       raw: fraction,
