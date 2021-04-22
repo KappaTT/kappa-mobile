@@ -76,3 +76,7 @@ Regular process:
 4. Run `adb install-multiple ./*` inside the folder
 
 Note: because the build will generate a new published bundle, it is recommended to build the android version before the iOS version due to the stricter iOS approval requirements.
+
+## License
+
+This project is [GPLv2 licensed](./LICENSE)
